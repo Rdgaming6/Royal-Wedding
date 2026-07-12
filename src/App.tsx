@@ -296,7 +296,13 @@ export default function App() {
             <div className="max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
               
               {/* Left Side: Editorial Typography layout */}
-              <div className="lg:col-span-6 flex flex-col items-start text-left">
+              <motion.div
+                initial={{ opacity: 0, y: 35 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-120px" }}
+                transition={{ duration: 0.95, ease: [0.16, 1, 0.3, 1] }}
+                className="lg:col-span-6 flex flex-col items-start text-left"
+              >
                 <span className="text-[11px] tracking-[0.3em] text-champagne uppercase font-bold flex items-center gap-2 mb-3">
                   <Heart className="h-3.5 w-3.5" /> Majestic Scenography
                 </span>
@@ -322,12 +328,18 @@ export default function App() {
                 >
                   Our Philosophy
                 </button>
-              </div>
+              </motion.div>
 
               {/* Right Side: Double Image Frame Layout */}
-              <div className="lg:col-span-6 grid grid-cols-12 gap-4 relative">
+              <motion.div
+                initial={{ opacity: 0, y: 45 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-120px" }}
+                transition={{ duration: 1.1, ease: [0.16, 1, 0.3, 1], delay: 0.15 }}
+                className="lg:col-span-6 grid grid-cols-12 gap-4 relative"
+              >
                 <div className="absolute -left-6 top-1/2 -translate-y-1/2 text-champagne font-serif text-[180px] font-extralight leading-none opacity-5 select-none pointer-events-none">
-                  M
+                  R
                 </div>
 
                 <div className="col-span-8 overflow-hidden rounded-xl border border-champagne/15 gold-shadow transform hover:scale-[1.01] transition-transform duration-700 relative z-10">
@@ -349,8 +361,7 @@ export default function App() {
                     referrerPolicy="no-referrer"
                   />
                 </div>
-              </div>
-
+              </motion.div>
             </div>
           </section>
 

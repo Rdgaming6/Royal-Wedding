@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Menu, X, Sparkles } from "lucide-react";
+import { motion, AnimatePresence } from "motion/react";
 
 interface NavLink {
   label: string;
@@ -124,44 +125,57 @@ export default function Navbar({ onBookClick }: { onBookClick: () => void }) {
         </div>
 
         {/* Mobile Fullscreen Glass Overlay Menu */}
-        {isMobileMenuOpen && (
-          <div className="fixed inset-0 bg-luxury-black/98 md:bg-dark-glass flex flex-col items-center justify-center z-40 animate-fade-in">
-            {/* Elegant Background Emblem */}
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-[0.03] select-none text-champagne font-serif text-[20vw]">
-              R
-            </div>
+        <AnimatePresence>
+          {isMobileMenuOpen && (
+            <motion.div
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -20 }}
+              transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
+              className="fixed inset-0 bg-luxury-black/98 flex flex-col items-center justify-center z-40"
+            >
+              {/* Elegant Background Emblem */}
+              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-[0.03] select-none text-champagne font-serif text-[20vw]">
+                R
+              </div>
 
-            <div className="flex flex-col items-center gap-6 z-10 text-center px-6">
-              <span className="text-[10px] tracking-[0.3em] text-champagne uppercase font-medium">
-                Royal Weddings
-              </span>
-              <div className="h-[1px] w-12 bg-champagne/30 mb-2" />
+              <div className="flex flex-col items-center gap-5 z-10 text-center px-6">
+                <span className="text-[10px] tracking-[0.3em] text-champagne uppercase font-medium">
+                  Royal Weddings
+                </span>
+                <div className="h-[1px] w-12 bg-champagne/30 mb-2" />
 
-              {links.map((link, idx) => (
-                <a
-                  key={link.href}
-                  href={link.href}
-                  onClick={(e) => scrollToSection(e, link.href)}
-                  style={{ animationDelay: `${idx * 0.05}s` }}
-                  className="text-lg md:text-xl font-serif tracking-[0.15em] text-luxury-ivory hover:text-champagne transition-colors py-1 block uppercase"
+                {links.map((link, idx) => (
+                  <motion.a
+                    initial={{ opacity: 0, y: 15 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1], delay: idx * 0.04 }}
+                    key={link.href}
+                    href={link.href}
+                    onClick={(e) => scrollToSection(e, link.href)}
+                    className="text-lg md:text-xl font-serif tracking-[0.15em] text-luxury-ivory hover:text-champagne transition-colors py-1 block uppercase"
+                  >
+                    {link.label}
+                  </motion.a>
+                ))}
+
+                <div className="h-[1px] w-12 bg-champagne/30 mt-2" />
+                <motion.button
+                  initial={{ opacity: 0, scale: 0.95 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1], delay: links.length * 0.04 }}
+                  onClick={() => {
+                    setIsMobileMenuOpen(false);
+                    onBookClick();
+                  }}
+                  className="mt-4 px-8 py-3 rounded-full bg-gold-gradient text-luxury-black text-xs font-sans tracking-[0.15em] uppercase font-semibold hover:opacity-95 transition-all w-full max-w-xs shadow-xl"
                 >
-                  {link.label}
-                </a>
-              ))}
-
-              <div className="h-[1px] w-12 bg-champagne/30 mt-2" />
-              <button
-                onClick={() => {
-                  setIsMobileMenuOpen(false);
-                  onBookClick();
-                }}
-                className="mt-4 px-8 py-3 rounded-full bg-gold-gradient text-luxury-black text-xs font-sans tracking-[0.15em] uppercase font-semibold hover:opacity-95 transition-all w-full max-w-xs shadow-xl"
-              >
-                Book Consultation
-              </button>
-            </div>
-          </div>
-        )}
+                  Book Consultation
+                </motion.button>
+              </div>
+            </motion.div>
+          )}
+        </AnimatePresence>
       </nav>
     </>
   );

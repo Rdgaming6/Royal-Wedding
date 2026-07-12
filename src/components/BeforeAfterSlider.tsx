@@ -83,7 +83,9 @@ export default function BeforeAfterSlider() {
 
         {/* After Image (The Celebration Setup - Overlay) */}
         <div
-          className="absolute inset-0 h-full overflow-hidden pointer-events-none transition-all duration-75"
+          className={`absolute inset-0 h-full overflow-hidden pointer-events-none ${
+            isDragging ? "transition-none" : "transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)]"
+          }`}
           style={{ width: `${sliderPosition}%` }}
         >
           <img
@@ -100,7 +102,9 @@ export default function BeforeAfterSlider() {
 
         {/* Gold Slider Bar */}
         <div
-          className="absolute top-0 bottom-0 w-[2px] bg-gradient-to-b from-champagne-light via-champagne to-champagne-dark z-20 pointer-events-none"
+          className={`absolute top-0 bottom-0 w-[2px] bg-gradient-to-b from-champagne-light via-champagne to-champagne-dark z-20 pointer-events-none ${
+            isDragging ? "transition-none" : "transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)]"
+          }`}
           style={{ left: `${sliderPosition}%` }}
         >
           {/* Draggable central crown handle */}
