@@ -68,12 +68,12 @@ export default function WeddingCountdown() {
             <h4 className="font-serif text-2xl md:text-3xl font-light mb-4">
               {isCustomActive 
                 ? `${customName || "Your"} Eternal Day` 
-                : "The Next Royal Union"}
+                : "The Next Signature Union"}
             </h4>
             <p className="text-xs text-gray-400 font-light mb-6 leading-relaxed max-w-sm mx-auto lg:mx-0">
               {isCustomActive
                 ? "Watching the moments melt away until you step into a fairytale curated down to the finest detail by our master designers."
-                : "Counting down to our signature Royal Imperial Winter Showcase Wedding at the Rambagh Palace, Jaipur."}
+                : "Counting down to our signature TNP Imperial Winter Showcase Wedding at the Rambagh Palace, Jaipur."}
             </p>
 
             {/* Interactive Form Controls */}

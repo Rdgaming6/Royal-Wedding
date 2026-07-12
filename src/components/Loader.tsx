@@ -14,7 +14,7 @@ export default function Loader({ onComplete }: { onComplete: () => void }) {
     return () => clearTimeout(timer);
   }, [onComplete]);
 
-  const brandText = "ROYAL WEDDINGS";
+  const brandText = "TNP EVENT PLANNER";
   const subtitle = "HAUTE COUTURE WEDDINGS & CELEBRATIONS";
 
   return (
@@ -50,7 +50,7 @@ export default function Loader({ onComplete }: { onComplete: () => void }) {
               transition={{ duration: 1.5, ease: [0.16, 1, 0.3, 1] }}
               className="mb-8 flex h-16 w-16 items-center justify-center rounded-full border border-champagne/30 text-gold-gradient font-serif text-2xl tracking-widest"
             >
-              R
+              T
             </motion.div>
 
             {/* Main Brand Title with letter-staggered fade up */}

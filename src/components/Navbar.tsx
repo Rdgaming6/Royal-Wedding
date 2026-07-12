@@ -83,10 +83,10 @@ export default function Navbar({ onBookClick }: { onBookClick: () => void }) {
             onClick={(e) => scrollToSection(e, "#home")}
           >
             <span className="font-serif text-xl md:text-2xl tracking-[0.2em] font-light leading-none text-gold-gradient hover:opacity-90 transition-opacity">
-              ROYAL WEDDINGS
+              TNP EVENT PLANNER
             </span>
             <span className="text-[7px] md:text-[8px] font-sans tracking-[0.3em] font-light uppercase opacity-70">
-              Luxury Wedding Planning
+              Luxury Event Planning
             </span>
           </a>
 
@@ -136,12 +136,12 @@ export default function Navbar({ onBookClick }: { onBookClick: () => void }) {
             >
               {/* Elegant Background Emblem */}
               <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-[0.03] select-none text-champagne font-serif text-[20vw]">
-                R
+                T
               </div>
 
               <div className="flex flex-col items-center gap-5 z-10 text-center px-6">
                 <span className="text-[10px] tracking-[0.3em] text-champagne uppercase font-medium">
-                  Royal Weddings
+                  TNP Event Planner
                 </span>
                 <div className="h-[1px] w-12 bg-champagne/30 mb-2" />
 
