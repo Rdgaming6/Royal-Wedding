@@ -1,0 +1,6 @@
+{
+  "name": "Maison d'Amour | Ultra-Luxury Wedding Planner",
+  "description": "A world-class, ultra-premium, luxury wedding planning and event management brand crafting timeless royal and destination weddings.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
