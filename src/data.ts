@@ -190,7 +190,7 @@ export const TESTIMONIALS: TestimonialItem[] = [
     id: "rev-1",
     name: "Vikram & Shreya Singhania",
     role: "Bride & Groom",
-    quote: "Maison d'Amour didn't just plan our wedding; they built a museum-quality experience that our friends are still talking about two years later. The precision, the visual layout, and the absolute level of calm hospitality during our ₹6 Crore celebration in Udaipur was masterful.",
+    quote: "Royal Weddings didn't just plan our wedding; they built a museum-quality experience that our friends are still talking about two years later. The precision, the visual layout, and the absolute level of calm hospitality during our ₹6 Crore celebration in Udaipur was masterful.",
     rating: 5,
     avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&h=200&q=80",
     location: "Udaipur Wedding"
@@ -199,7 +199,7 @@ export const TESTIMONIALS: TestimonialItem[] = [
     id: "rev-2",
     name: "Karan Malhotra",
     role: "Father of the Bride",
-    quote: "With over 400 international VIP guests flying in for my daughter's wedding, I was incredibly anxious. Maison d'Amour's guest concierge service handled everything flawlessly—from chartered helicopter arrivals to bespoke hotel gifts. Worth every single rupee.",
+    quote: "With over 400 international VIP guests flying in for my daughter's wedding, I was incredibly anxious. Royal Weddings' guest concierge service handled everything flawlessly—from chartered helicopter arrivals to bespoke hotel gifts. Worth every single rupee.",
     rating: 5,
     avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=200&h=200&q=80",
     location: "Jaipur Wedding"
@@ -208,7 +208,7 @@ export const TESTIMONIALS: TestimonialItem[] = [
     id: "rev-3",
     name: "Zoya & Daniel Carter",
     role: "Bride & Groom",
-    quote: "Our clifftop Bali wedding was a logistical puzzle, but Maison d'Amour handled the Indonesian local partnerships with perfection. The styling was exactly out of Vogue. Immersive, majestic, and completely stress-free. There is no one else in this league.",
+    quote: "Our clifftop Bali wedding was a logistical puzzle, but Royal Weddings handled the Indonesian local partnerships with perfection. The styling was exactly out of Vogue. Immersive, majestic, and completely stress-free. There is no one else in this league.",
     rating: 5,
     avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&h=200&q=80",
     location: "Bali Wedding"
@@ -235,7 +235,7 @@ export const PRICE_PACKAGES: PricePackage[] = [
   },
   {
     id: "royal-signature",
-    name: "The Maison Heritage",
+    name: "The Royal Heritage",
     price: "₹45 Lakh",
     priceSubtitle: "Custom Full Service Management",
     description: "Our signature elite full-service planning offering. Handcrafted luxury, comprehensive vendor buyouts, custom structural decor, and infinite attention to detail.",
@@ -295,7 +295,7 @@ export const FAQ_ITEMS: FAQItem[] = [
   },
   {
     id: "faq-5",
-    question: "What is the difference between your 'Atelier' package and 'Maison Heritage' full service?",
-    answer: "The Atelier is a design-centric coordination package meant for couples who have locked down their primary venue but need a high-end designer to elevate the styling, handle fine-detailed vendor negotiations, and coordinate day-of execution. The Maison Heritage is a turnkey, complete hands-on takeover where we manage every single breath of the wedding—from finding your secret beach venue in Bali to designing the final thank-you cards."
+    question: "What is the difference between Design Curation and Turnkey Full Service?",
+    answer: "Design Curation is a styling-centric coordination service meant for couples who have locked down their primary venue but need a high-end designer to elevate the styling, handle fine-detailed vendor negotiations, and coordinate day-of execution. Our Turnkey Full Service is a complete, hands-on takeover where we manage every single breath of the wedding—from finding your secret beach venue in Bali to designing the final thank-you cards."
   }
 ];

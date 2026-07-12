@@ -3,7 +3,7 @@ import { useEffect } from "react";
 export default function SEO() {
   useEffect(() => {
     // 1. Set Page Title
-    document.title = "Maison d'Amour | Luxury Wedding Planner & Royal Event Scenography";
+    document.title = "Royal Weddings | Luxury Wedding Planner & Royal Event Scenography";
 
     // 2. Setup Helper to Add/Update Meta Tags
     const setMeta = (name: string, content: string, isProperty = false) => {
@@ -18,22 +18,22 @@ export default function SEO() {
     };
 
     // 3. Inject Primary SEO Metas
-    setMeta("description", "Maison d'Amour is an ultra-premium, luxury wedding planning company crafting timeless royal, scenic, and destination wedding experiences globally.");
+    setMeta("description", "Royal Weddings is an ultra-premium, luxury wedding planning company crafting timeless royal, scenic, and destination wedding experiences globally.");
     setMeta("keywords", "luxury wedding planner, royal wedding india, wedding planning company, destination wedding planner, Udaipur wedding, Jaipur palace wedding, Dior style wedding, premium wedding organizer");
-    setMeta("author", "Maison d'Amour Luxury Weddings");
+    setMeta("author", "Royal Weddings Luxury Weddings");
     setMeta("robots", "index, follow");
 
     // 4. Inject Open Graph Tags
-    setMeta("og:title", "Maison d'Amour | Ultra-Premium Luxury Wedding Planner", true);
+    setMeta("og:title", "Royal Weddings | Ultra-Premium Luxury Wedding Planner", true);
     setMeta("og:description", "From intimate scenic vows to grand historic palace takeovers, we sculpt timeless multi-crore celebrations of love.", true);
     setMeta("og:image", "https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=1200&q=80", true);
     setMeta("og:url", window.location.href, true);
     setMeta("og:type", "website", true);
-    setMeta("og:site_name", "Maison d'Amour Weddings", true);
+    setMeta("og:site_name", "Royal Weddings", true);
 
     // 5. Inject Twitter Card Tags
     setMeta("twitter:card", "summary_large_image");
-    setMeta("twitter:title", "Maison d'Amour | Luxury Wedding Planner & Royal Scenography");
+    setMeta("twitter:title", "Royal Weddings | Luxury Wedding Planner & Royal Scenography");
     setMeta("twitter:description", "We orchestrate breathtaking multi-crore wedding experiences in Rajasthan, Goa, Bali, and Dubai.");
     setMeta("twitter:image", "https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=1200&q=80");
 
@@ -62,11 +62,11 @@ export default function SEO() {
     const businessSchema = {
       "@context": "https://schema.org",
       "@type": "ProfessionalService",
-      "name": "Maison d'Amour Luxury Weddings",
+      "name": "Royal Weddings Luxury Weddings",
       "image": "https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=1200&q=80",
       "description": "A world-class, ultra-premium, luxury wedding planning and event management brand crafting timeless royal and destination weddings.",
       "telephone": "+91 99999 88888",
-      "email": "concierge@maisondamour.com",
+      "email": "concierge@royalweddings.com",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "The Taj Mahal Palace, Mansingh Road",
@@ -90,8 +90,8 @@ export default function SEO() {
       },
       "sameAs": [
         "https://www.instagram.com/vogueweddings",
-        "https://www.facebook.com/maisondamour",
-        "https://www.pinterest.com/maisondamour"
+        "https://www.facebook.com/royalweddings",
+        "https://www.pinterest.com/royalweddings"
       ]
     };
     injectSchema("schema-business", businessSchema);

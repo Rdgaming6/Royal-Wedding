@@ -309,7 +309,7 @@ export default function App() {
                 <div className="h-[1px] w-20 bg-champagne my-2 mb-6" />
 
                 <p className="text-sm text-gray-700 font-light leading-relaxed mb-6">
-                  Maison d'Amour is a high-luxury wedding planning institution dedicated strictly to crafting multi-day events that look like they stepped from the pages of Vogue. Founded on the standards of haute couture and fine artistry, we curate every sensory touchpoint with meticulous precision.
+                  Royal Weddings is a high-luxury wedding planning institution dedicated strictly to crafting multi-day events that look like they stepped from the pages of Vogue. Founded on the standards of haute couture and fine artistry, we curate every sensory touchpoint with meticulous precision.
                 </p>
 
                 <p className="text-sm text-gray-500 font-light leading-relaxed mb-8">
@@ -905,7 +905,7 @@ export default function App() {
           <section className="py-12 bg-luxury-black overflow-hidden relative">
             <div className="max-w-7xl mx-auto px-6 md:px-12">
               <span className="text-[11px] tracking-[0.3em] text-champagne uppercase font-bold flex items-center justify-center gap-2 mb-6 select-none">
-                <Instagram className="h-4 w-4" /> Follow @MaisonDAmourWeddings
+                <Instagram className="h-4 w-4" /> Follow @RoyalWeddings
               </span>
               
               <div className="grid grid-cols-2 md:grid-cols-6 gap-4">
@@ -965,7 +965,7 @@ export default function App() {
                     <CheckCircle className="h-12 w-12 text-champagne mx-auto mb-4 animate-bounce" />
                     <h3 className="font-serif text-2xl text-gold-gradient font-semibold mb-2">Inquiry Successfully Registered</h3>
                     <p className="text-xs text-gray-300 font-light max-w-sm mx-auto leading-relaxed">
-                      Thank you for contacting Maison d'Amour. Our head concierge will contact you via email or private call within the next 12 hours.
+                      Thank you for contacting Royal Weddings. Our head concierge will contact you via email or private call within the next 12 hours.
                     </p>
                   </motion.div>
                 ) : (
@@ -1084,7 +1084,7 @@ export default function App() {
                   
                   <div className="mb-6 flex justify-between items-start">
                     <div>
-                      <h4 className="font-serif text-2xl text-gold-gradient font-light">MAISON D'AMOUR HQ</h4>
+                      <h4 className="font-serif text-2xl text-gold-gradient font-light">ROYAL WEDDINGS HQ</h4>
                       <p className="text-[10px] text-gray-400 tracking-wider font-light mt-1">THE TAJ MAHAL PALACE, NEW DELHI</p>
                     </div>
                     <div className="h-10 w-10 rounded-full border border-champagne/20 flex items-center justify-center bg-luxury-charcoal">
@@ -1107,7 +1107,7 @@ export default function App() {
                     </p>
                     <p className="flex items-center gap-3">
                       <Mail className="h-4 w-4 text-champagne shrink-0" />
-                      <span>concierge@maisondamour.com</span>
+                      <span>concierge@royalweddings.com</span>
                     </p>
                     <p className="flex items-center gap-3">
                       <Clock className="h-4 w-4 text-champagne shrink-0" />
@@ -1134,7 +1134,7 @@ export default function App() {
                         <span className="absolute -inset-4 rounded-full border border-champagne/40 bg-champagne/10 animate-ping" />
                         <MapPin className="h-8 w-8 text-champagne drop-shadow-[0_0_10px_#C8A96A] mx-auto relative z-10" />
                         <span className="block mt-2 text-[9px] font-serif uppercase tracking-widest text-champagne-light bg-luxury-black/90 px-2 py-0.5 rounded border border-champagne/10 whitespace-nowrap relative z-10">
-                          Maison d'Amour
+                          Royal Weddings
                         </span>
                       </div>
                     </div>
@@ -1165,7 +1165,7 @@ export default function App() {
               {/* Box 1: Brand & Bio */}
               <div className="md:col-span-4 flex flex-col items-start">
                 <span className="font-serif text-2xl tracking-[0.2em] font-light text-gold-gradient mb-4 leading-none">
-                  MAISON D'AMOUR
+                  ROYAL WEDDINGS
                 </span>
                 <p className="text-xs text-gray-400 font-sans font-light leading-relaxed mb-6 max-w-sm">
                   We translate intense romantic unions into highly calibrated physical architecture, staging world-class weddings of timeless distinction across India, UAE, and Southeast Asia.
@@ -1205,7 +1205,7 @@ export default function App() {
               {/* Box 2: Quick Links Navigation */}
               <div className="md:col-span-4 grid grid-cols-2 gap-4">
                 <div>
-                  <h4 className="font-serif text-sm tracking-[0.2em] uppercase text-champagne font-semibold mb-6">Maison</h4>
+                  <h4 className="font-serif text-sm tracking-[0.2em] uppercase text-champagne font-semibold mb-6">Royal</h4>
                   <ul className="space-y-3 font-sans text-xs text-gray-400 font-light">
                     <li><a href="#home" className="hover:text-champagne transition-colors">Home Page</a></li>
                     <li><a href="#about" className="hover:text-champagne transition-colors">Our Vision</a></li>
@@ -1233,7 +1233,7 @@ export default function App() {
                 </p>
                 <p className="flex items-center gap-3">
                   <Mail className="h-4 w-4 text-champagne shrink-0" />
-                  <span>concierge@maisondamour.com</span>
+                  <span>concierge@royalweddings.com</span>
                 </p>
                 <p className="flex items-start gap-3 text-left">
                   <MapPin className="h-4 w-4 text-champagne shrink-0 mt-0.5" />
@@ -1250,7 +1250,7 @@ export default function App() {
             </div>
 
             <div className="max-w-7xl mx-auto px-6 md:px-12 mt-16 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-[10px] text-gray-500 font-sans tracking-wider">
-              <p>© 2026 Maison d'Amour Weddings & Celebrations. All Rights Reserved. Private Trust.</p>
+              <p>© 2026 Royal Weddings & Celebrations. All Rights Reserved. Private Trust.</p>
               <div className="flex gap-6">
                 <a href="#about" className="hover:text-champagne transition-colors">Terms of Luxury Service</a>
                 <a href="#contact" className="hover:text-champagne transition-colors">Privacy Confidentiality Charter</a>
@@ -1262,7 +1262,7 @@ export default function App() {
 
           {/* A. Animated Floating WhatsApp Button */}
           <a
-            href="https://wa.me/919999988888?text=Hello%20Maison%20d%27Amour%20Concierge%2C%20I%20would%20like%20to%20inquire%20about%20your%20luxury%20wedding%20planning%20services."
+            href="https://wa.me/919999988888?text=Hello%20Royal%20Weddings%20Concierge%2C%20I%20would%20like%20to%20inquire%20about%20your%20luxury%20wedding%20planning%20services."
             target="_blank"
             rel="noreferrer"
             id="floating-whatsapp"
@@ -1324,7 +1324,7 @@ export default function App() {
                   </button>
 
                   <span className="text-[10px] tracking-[0.25em] text-champagne uppercase font-bold flex items-center gap-2 mb-2">
-                    <Sparkles className="h-3.5 w-3.5" /> Maison Curation Request
+                    <Sparkles className="h-3.5 w-3.5" /> Royal Curation Request
                   </span>
                   <h3 className="font-serif text-2xl md:text-3xl text-luxury-black mb-1">
                     Book Private Consultation
